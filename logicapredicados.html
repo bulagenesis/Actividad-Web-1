@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <img src="imagen/logica.png" alt="Banner" class="banner">
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="submenu">
+                    <a href="conceptos.html">Conceptos</a>
+                    <ul class="dropdown">
+                        <li><a href="proposiciones.html">Proposiciones</a></li>
+                        <li><a href="tablasdeverdad.html">Tablas de Verdad</a></li>
+                        <li><a href="logicapredicados.html">Lógica de Predicados</a></li>
+                        <li><a href="inferencias.html">Inferencias Lógicas</a></li>
+                        <li><a href="algoritmos.html">Algoritmos y Lógica</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="multimedia.html">Multimedia</a>
+                    <ul class="dropdown">
+                        <li><a href="multimedia.html#videos">Videos</a></li>
+                        <li><a href="multimedia.html#podcasts">Podcasts</a></li>
+                    </ul>
+                </li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="nosotros.html">Autor</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+        
+        <main>
+            <section id="logicapredicados">
+                <h2>Lógica de Predicados</h2>
+                <p>La <strong>lógica de predicados</strong> es una extensión de la lógica proposicional que permite expresar de manera más precisa y detallada las relaciones entre individuos en un dominio de discurso. Mientras que la lógica proposicional trabaja con proposiciones completas que pueden ser verdaderas o falsas, la lógica de predicados permite descomponer esas proposiciones en componentes más pequeños, denominados <em>predicados</em>, que pueden aplicarse a individuos específicos. La principal diferencia entre ambas radica en que, en la lógica de predicados, los predicados se asocian con sujetos, mientras que en la lógica proposicional, solo se manejan proposiciones completas.</p>
+            
+                <h3>Definición de Lógica de Predicados</h3>
+                <p>La lógica de predicados se centra en las siguientes componentes:</p>
+                <ul>
+                    <li><strong>Predicados:</strong> Son funciones o relaciones que se aplican a los sujetos. Un predicado es una propiedad que puede ser atribuida a un individuo o una relación entre varios individuos. Por ejemplo, "es mayor que" o "es estudiante" son predicados.</li>
+                    <li><strong>Variables:</strong> Son símbolos que representan a los individuos dentro de un dominio de discurso. Se suelen utilizar en conjunción con predicados para formar fórmulas más complejas.</li>
+                    <li><strong>Cuantificadores:</strong> Permiten especificar si una propiedad es aplicable a <em>todos</em> los individuos del dominio de discurso (cuantificador universal) o si existe al menos un individuo para el que se aplica la propiedad (cuantificador existencial).
+                        <ul>
+                            <li><strong>Cuantificador Universal (∀):</strong> Expresa que una afirmación es verdadera para todos los individuos de un dominio.</li>
+                            <li><strong>Cuantificador Existencial (∃):</strong> Expresa que hay al menos un individuo para el cual la afirmación es verdadera.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Términos:</strong> Los términos se refieren a los objetos del dominio. Pueden ser constantes (por ejemplo, una persona específica), variables (que representan cualquier persona) o funciones que toman uno o más argumentos.</li>
+                </ul>
+            
+                <h3>Ejemplos de Lógica de Predicados</h3>
+                <h4>1. Predicados y Cuantificadores:</h4>
+                <img src="imagen/estudiante.jpg" alt="">
+                <p>Consideremos el predicado "es estudiante". La afirmación "Juan es estudiante" se puede escribir como:</p>
+                <pre>Estudiante(Juan)</pre>
+                <p>Ahora, supongamos que queremos expresar que todos los miembros de un conjunto son estudiantes. Usamos el cuantificador universal:</p>
+                <pre>∀x (Estudiante(x))</pre>
+                <img src="imagen/estudiantes.jpg" alt="">
+                <p>Esto significa que "todos los x son estudiantes". Si queremos decir que existe al menos una persona que es estudiante, usamos el cuantificador existencial:</p>
+                <pre>∃x (Estudiante(x))</pre>
+                <p>Este ejemplo afirma que "hay al menos un x que es estudiante".</p>
+            
+                <h4>2. Relaciones y Predicados Binarios:</h4>
+                <p>La lógica de predicados también permite expresar relaciones entre dos o más individuos. Por ejemplo, si queremos afirmar que "Juan es mayor que Pedro", podemos definir un predicado binario como "MayorQue", y la proposición se escribiría como:</p>
+                <pre>MayorQue(Juan, Pedro)</pre>
+                <img src="imagen/mayorque.png" alt="">
+                <p>Aquí, el predicado MayorQue se aplica a dos individuos, Juan y Pedro, y establece una relación entre ellos. En lógica de predicados, podemos utilizar cuantificadores para hacer afirmaciones generales o existenciales sobre las relaciones. Por ejemplo, si queremos expresar que todas las personas tienen una edad mayor que 0, podemos escribir:</p>
+                <pre>∀x (Edad(x) > 0)</pre>
+                
+                <p>Esto indica que "para todo x, la edad de x es mayor que 0".</p>
+            
+                <h4>3. Combinar Predicados y Cuantificadores:</h4>
+                <p>Ahora consideremos una afirmación más compleja: "Cada estudiante tiene un profesor". Podríamos definir el predicado Estudiante(x) para denotar que x es estudiante, y el predicado TieneProfesor(x, y) para denotar que x tiene a y como profesor. La afirmación completa sería:</p>
+                <img src="imagen/profesor.jpg" alt="">
+                <pre>∀x (Estudiante(x) → ∃y (Profesor(y) ∧ TieneProfesor(x, y)))</pre>
+                <p>Esto significa que "para todo x, si x es un estudiante, entonces existe un y tal que y es un profesor y x tiene a y como profesor".</p>
+            
+                <h3>Uso de la Lógica de Predicados en Matemáticas y Ciencias de la Computación</h3>
+                <p>La lógica de predicados se utiliza ampliamente en diversas áreas, como la teoría de conjuntos, la teoría de la computación, y la inteligencia artificial. En matemáticas, se emplea para expresar teoremas y demostraciones de forma precisa. La lógica de predicados también es fundamental en el desarrollo de lenguajes formales y algoritmos para la verificación de programas.</p>
+                <p>En inteligencia artificial, por ejemplo, la lógica de predicados se usa para representar conocimiento y razonamiento automático. Los sistemas basados en lógica de predicados pueden inferir nuevas verdades a partir de hechos existentes utilizando reglas de inferencia como la resolución.</p>
+            
+                <h3>Referencias Bibliográficas</h3>
+                <ul>
+                    <li>Wikipedia contributors. (n.d.). Lógica de primer orden. <i>Wikipedia</i>. Recuperado el 28 de marzo de 2025, de <a href="https://es.wikipedia.org/wiki/L%C3%B3gica_de_primer_orden" target="_blank">https://es.wikipedia.org/wiki/L%C3%B3gica_de_primer_orden</a></li>
+            <li>Guao.org. (n.d.). Lógica de predicados: Introducción y aplicaciones. Recuperado de <a href="https://guao.org/sites/default/files/biblioteca/Lógica%20de%20predicados%20.pdf" target="_blank">https://guao.org/sites/default/files/biblioteca/Lógica%20de%20predicados%20.pdf</a></li>
+            <li>Scalahed. (n.d.). Fundamentos de la lógica matemática. <i>GC Scalahed</i>. Recuperado de <a href="https://gc.scalahed.com/recursos/files/r161r/w25470w/FUNDAMENTOS_DE_LA_LOGICA_MATEMATICA_LILI.pdf" target="_blank">https://gc.scalahed.com/recursos/files/r161r/w25470w/FUNDAMENTOS_DE_LA_LOGICA_MATEMATICA_LILI.pdf</a></li>
+            <li>YouTube. (n.d.). <i>Fundamentos de Lógica Matemática: Videos explicativos</i>. Recuperado de <a href="https://www.youtube.com/playlist?list=PLbk60veMSVKurzdEdvmiO947VJsPMgkaW" target="_blank">https://www.youtube.com/playlist?list=PLbk60veMSVKurzdEdvmiO947VJsPMgkaW</a></li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 OVI - Lógica Computacional</p>
+        </footer>
+        <a href="#" id="btnTop">&#8679;</a>
+    <script src="boton.js"></script>
+    
+</body>
+</html>

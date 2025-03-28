@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <img src="imagen/logica.png" alt="Banner" class="banner">
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="submenu">
+                    <a href="conceptos.html">Conceptos</a>
+                    <ul class="dropdown">
+                        <li><a href="proposiciones.html">Proposiciones</a></li>
+                        <li><a href="tablasdeverdad.html">Tablas de Verdad</a></li>
+                        <li><a href="logicapredicados.html">Lógica de Predicados</a></li>
+                        <li><a href="inferencias.html">Inferencias Lógicas</a></li>
+                        <li><a href="algoritmos.html">Algoritmos y Lógica</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="multimedia.html">Multimedia</a>
+                    <ul class="dropdown">
+                        <li><a href="multimedia.html#videos">Videos</a></li>
+                        <li><a href="multimedia.html#podcasts">Podcasts</a></li>
+                    </ul>
+                </li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="nosotros.html">Autor</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+        
+        <main>
+            <section id="tablasverdad">
+                <h2>Tablas de Verdad</h2>
+                <p>Las tablas de verdad son herramientas fundamentales en la lógica proposicional, utilizadas para evaluar expresiones lógicas mediante la combinación de valores de verdad.</p>
+                
+                <h3>Ejemplo: Conjunción (P ∧ Q)</h3>
+                <table>
+                    <tr>
+                        <th>P</th>
+                        <th>Q</th>
+                        <th>P ∧ Q</th>
+                    </tr>
+                    <tr><td>V</td><td>V</td><td>V</td></tr>
+                    <tr><td>V</td><td>F</td><td>F</td></tr>
+                    <tr><td>F</td><td>V</td><td>F</td></tr>
+                    <tr><td>F</td><td>F</td><td>F</td></tr>
+                </table>
+                
+                <h3>Ejemplo: Disyunción (P ∨ Q)</h3>
+                <table>
+                    <tr>
+                        <th>P</th>
+                        <th>Q</th>
+                        <th>P ∨ Q</th>
+                    </tr>
+                    <tr><td>V</td><td>V</td><td>V</td></tr>
+                    <tr><td>V</td><td>F</td><td>V</td></tr>
+                    <tr><td>F</td><td>V</td><td>V</td></tr>
+                    <tr><td>F</td><td>F</td><td>F</td></tr>
+                </table>
+                
+                <h3>Ejemplo: Implicación (P → Q)</h3>
+                <table>
+                    <tr>
+                        <th>P</th>
+                        <th>Q</th>
+                        <th>P → Q</th>
+                    </tr>
+                    <tr><td>V</td><td>V</td><td>V</td></tr>
+                    <tr><td>V</td><td>F</td><td>F</td></tr>
+                    <tr><td>F</td><td>V</td><td>V</td></tr>
+                    <tr><td>F</td><td>F</td><td>V</td></tr>
+                </table>
+                
+                <h3>Ejemplo: Bicondicional (P ↔ Q)</h3>
+                <table>
+                    <tr>
+                        <th>P</th>
+                        <th>Q</th>
+                        <th>P ↔ Q</th>
+                    </tr>
+                    <tr><td>V</td><td>V</td><td>V</td></tr>
+                    <tr><td>V</td><td>F</td><td>F</td></tr>
+                    <tr><td>F</td><td>V</td><td>F</td></tr>
+                    <tr><td>F</td><td>F</td><td>V</td></tr>
+                </table>
+                
+                <h3>Referencias</h3>
+                <ul>
+                    <li>Wikipedia. (2023). <em>Tabla de verdad</em>. Recuperado de <a href="https://es.wikipedia.org/wiki/Tabla_de_verdad" target="_blank">Wikipedia</a></li>
+                    <li>Concepto.de. (s.f.). <em>Proposiciones simples y compuestas - Qué son y ejemplos</em>. Recuperado de <a href="https://concepto.de/proposiciones-simples-y-compuestas/" target="_blank">https://concepto.de/proposiciones-simples-y-compuestas/</a></li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 OVI - Lógica Computacional</p>
+        </footer>
+        <a href="#" id="btnTop">&#8679;</a>
+    <script src="boton.js"></script>
+</body>
+</html>

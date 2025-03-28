@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <img src="imagen/logica.png" alt="Banner" class="banner">
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="submenu">
+                    <a href="conceptos.html">Conceptos</a>
+                    <ul class="dropdown">
+                        <li><a href="proposiciones.html">Proposiciones</a></li>
+                        <li><a href="tablasdeverdad.html">Tablas de Verdad</a></li>
+                        <li><a href="logicapredicados.html">Lógica de Predicados</a></li>
+                        <li><a href="inferencias.html">Inferencias Lógicas</a></li>
+                        <li><a href="algoritmos.html">Algoritmos y Lógica</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="multimedia.html">Multimedia</a>
+                    <ul class="dropdown">
+                        <li><a href="multimedia.html#videos">Videos</a></li>
+                        <li><a href="multimedia.html#podcasts">Podcasts</a></li>
+                    </ul>
+                </li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="nosotros.html">Autor</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+        
+        <main>
+            <section id="inferencias">
+                <h2>Inferencias Lógicas</h2>
+                <p>Las inferencias son reglas que permiten derivar conclusiones a partir de premisas. Las inferencias lógicas son fundamentales en el razonamiento matemático, filosófico y computacional. Consisten en el proceso mediante el cual, a partir de una o más premisas (proposiciones o enunciados), se llega a una conclusión que se considera necesariamente verdadera, bajo ciertas condiciones.</p>
+            
+                <h3>Inferencias Deductivas</h3>
+                <p>En una inferencia deductiva, partimos de premisas generales o principios aceptados como verdaderos para llegar a una conclusión específica. La validez de la conclusión depende completamente de la validez de las premisas y del razonamiento aplicado. Si las premisas son verdaderas y el razonamiento es correcto, entonces la conclusión es también verdadera. Es decir, una inferencia deductiva garantiza la verdad de la conclusión si las premisas son verdaderas.</p>
+            
+                <h4>Ejemplo de Inferencia Deductiva:</h4>
+                <p>Premisa 1: Todos los mamíferos tienen corazón.</p>
+                <p>Premisa 2: Un perro es un mamífero.</p>
+                <p>Conclusión: Por lo tanto, un perro tiene corazón.</p>
+                <p>En este caso, partimos de una regla general (todos los mamíferos tienen corazón) y una premisa particular (un perro es un mamífero) para llegar a una conclusión específica (un perro tiene corazón). Este tipo de razonamiento asegura que la conclusión es verdadera, siempre que las premisas sean ciertas.</p>
+            
+                <h4>Ejemplo de Modus Ponens:</h4>
+                <p>Si "P implica Q" es verdadero y "P" es verdadero, entonces "Q" también debe ser verdadero.</p>
+                <p>Ejemplo:</p>
+                <p>Premisa 1: Si hoy es sábado, entonces Reina está en la librería.</p>
+                <p>Premisa 2: Hoy es sábado.</p>
+                <p>Conclusión: Por lo tanto, Reina está en la librería.</p>
+                <p>Este tipo de inferencia deductiva es una de las formas más comunes de razonamiento, en la que la relación entre las premisas y la conclusión está estructurada de manera tal que, si ambas premisas son ciertas, la conclusión necesariamente también lo será.</p>
+            
+                <h3>Inferencias Inductivas</h3>
+                <p>Las inferencias inductivas, por otro lado, se basan en la observación de patrones o hechos particulares para llegar a una conclusión general. Aunque las premisas pueden ser ciertas, la conclusión alcanzada mediante un razonamiento inductivo no es necesariamente verdadera. La conclusión es probable, pero no está garantizada, ya que se basa en una generalización a partir de un número limitado de casos.</p>
+            
+                <h4>Ejemplo de Inferencia Inductiva:</h4>
+                <p>Premisa 1: Los primeros 100 frijoles de este empaque son blancos.</p>
+                <p>Premisa 2: Los siguientes 200 frijoles del empaque también son blancos.</p>
+                <p>Conclusión: Por lo tanto, todos los frijoles de este empaque son blancos.</p>
+                <p>Aunque las premisas sean observaciones válidas, la conclusión no necesariamente será cierta en todos los casos, ya que podría haber excepciones (por ejemplo, algunos frijoles de otro color en el empaque). Este tipo de inferencia permite formular generalizaciones, pero siempre existe la posibilidad de que se presenten contraejemplos.</p>
+            
+                <h4>Ejemplo adicional de Inferencia Inductiva:</h4>
+                <p>Premisa 1: El sol ha salido todos los días desde que tengo memoria.</p>
+                <p>Conclusión: Por lo tanto, el sol saldrá mañana.</p>
+                <p>En este caso, el razonamiento inductivo está basado en la observación repetida de un patrón (el sol sale todos los días) y se hace una predicción general (el sol saldrá mañana). Aunque esta inferencia es muy probable, no es garantizada, ya que existen situaciones excepcionales donde este patrón podría no cumplirse.</p>
+            
+                <h3>Diferencias entre Inferencia Deductiva e Inductiva</h3>
+                <p>La principal diferencia entre estas dos formas de inferencia es que la deducción proporciona certeza, mientras que la inducción solo proporciona probabilidad. Las inferencias deductivas son más fuertes en términos de certeza, ya que si las premisas son verdaderas, la conclusión debe ser verdadera. Las inferencias inductivas, en cambio, son útiles cuando no tenemos una certeza absoluta sobre la conclusión, pero basamos nuestra lógica en la probabilidad y en patrones observados.</p>
+            
+                <p>Por ejemplo, en las ciencias experimentales, las inferencias inductivas se utilizan para hacer generalizaciones basadas en observaciones empíricas, mientras que las inferencias deductivas son más comunes en las matemáticas y la lógica formal, donde las conclusiones se derivan directamente de las premisas.</p>
+            
+                <h3>Referencias</h3>
+                <ul>
+                    <li>FCALZADO. (s.f.). <i>Lógica: Inferencias deductivas e inductivas</i>. FCALZADO. <a href="https://fcalzado.es/logica/logica/01concbasicos/150dedinduc.html" target="_blank">https://fcalzado.es/logica/logica/01concbasicos/150dedinduc.html</a></li>
+                    <li>Platzi. (2018). <i>¿Qué es la inferencia lógica?</i> Platzi. <a href="https://platzi.com/tutoriales/1444-pensamiento-logico-2018/5970-que-es-la-inferencia-logica/" target="_blank">https://platzi.com/tutoriales/1444-pensamiento-logico-2018/5970-que-es-la-inferencia-logica/</a></li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 OVI - Lógica Computacional</p>
+        </footer>
+        <a href="#" id="btnTop">&#8679;</a>
+    <script src="boton.js"></script>
+    
+</body>
+</html>

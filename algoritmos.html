@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <img src="imagen/logica.png" alt="Banner" class="banner">
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="submenu">
+                    <a href="conceptos.html">Conceptos</a>
+                    <ul class="dropdown">
+                        <li><a href="proposiciones.html">Proposiciones</a></li>
+                        <li><a href="tablasdeverdad.html">Tablas de Verdad</a></li>
+                        <li><a href="logicapredicados.html">Lógica de Predicados</a></li>
+                        <li><a href="inferencias.html">Inferencias Lógicas</a></li>
+                        <li><a href="algoritmos.html">Algoritmos y Lógica</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="multimedia.html">Multimedia</a>
+                    <ul class="dropdown">
+                        <li><a href="multimedia.html#videos">Videos</a></li>
+                        <li><a href="multimedia.html#podcasts">Podcasts</a></li>
+                    </ul>
+                </li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="nosotros.html">Autor</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+        
+        <main>
+            <section id="algoritmos">
+                <h2>Algoritmos y Lógica</h2>
+                <p>La lógica computacional es la base de los algoritmos y su estructura fundamental. Los algoritmos son secuencias de pasos o instrucciones claras y ordenadas que resuelven un problema o realizan una tarea. La lógica, en el contexto de los algoritmos, se refiere a los principios y reglas que guían el razonamiento detrás de la secuencia de instrucciones. Ambos conceptos están intrínsecamente relacionados, ya que la correcta aplicación de la lógica es crucial para el diseño de algoritmos eficientes y efectivos.</p>
+                
+                <h3>Elementos de un Algoritmo</h3>
+                <p>Un algoritmo típico puede tener los siguientes elementos:</p>
+                <ul>
+                    <li><strong>Entrada:</strong> Los datos que se proporcionan al algoritmo.</li>
+                    <li><strong>Procesamiento:</strong> Las operaciones o cálculos que realiza el algoritmo con los datos de entrada.</li>
+                    <li><strong>Salida:</strong> El resultado obtenido después de procesar los datos.</li>
+                </ul>
+            
+                <h3>Ejemplo 1: Algoritmo de Suma de Dos Números</h3>
+                <p>Este es un algoritmo sencillo que suma dos números. Los pasos que sigue son los siguientes:</p>
+                <ol>
+                    <li><strong>Entrada:</strong> Dos números, A y B.</li>
+                    <li><strong>Procesamiento:</strong> Sumar los dos números (A + B).</li>
+                    <li><strong>Salida:</strong> El resultado de la suma.</li>
+                </ol>
+                <p><strong>Pseudocódigo:</strong></p>
+                <pre>
+            Inicio
+                Leer A, B
+                Suma ← A + B
+                Escribir Suma
+            Fin
+                </pre>
+            
+                <h3>Ejemplo 2: Algoritmo de Búsqueda Lineal</h3>
+                <p>La búsqueda lineal es un algoritmo para encontrar un valor dentro de una lista, recorriéndola desde el inicio hasta el final:</p>
+                <ol>
+                    <li><strong>Entrada:</strong> Una lista de números y el número objetivo.</li>
+                    <li><strong>Procesamiento:</strong> Comparar cada número de la lista con el objetivo.</li>
+                    <li><strong>Salida:</strong> La posición del número objetivo si se encuentra, o un mensaje indicando que no está presente.</li>
+                </ol>
+                <p><strong>Pseudocódigo:</strong></p>
+                <pre>
+            Inicio
+                Leer lista de números, objetivo
+                Para cada número en la lista
+                    Si número es igual al objetivo
+                        Escribir "Número encontrado en la posición", índice
+                        Detener búsqueda
+                Si no se encuentra el objetivo
+                    Escribir "Número no encontrado"
+            Fin
+                </pre>
+            
+                <h3>Ejemplo 3: Algoritmo de Ordenamiento (Burbuja)</h3>
+                <p>El algoritmo de ordenamiento burbuja compara elementos adyacentes de una lista y los intercambia si están en el orden incorrecto, repitiendo este proceso hasta que toda la lista está ordenada:</p>
+                <ol>
+                    <li><strong>Entrada:</strong> Una lista de números desordenados.</li>
+                    <li><strong>Procesamiento:</strong> Comparar elementos adyacentes y, si están en el orden incorrecto, intercambiarlos.</li>
+                    <li><strong>Salida:</strong> La lista ordenada.</li>
+                </ol>
+                <p><strong>Pseudocódigo:</strong></p>
+                <pre>
+            Inicio
+                Leer lista de números
+                Para cada elemento en la lista
+                    Para cada par de elementos adyacentes
+                        Si el primer elemento es mayor que el segundo
+                            Intercambiar los dos elementos
+                Escribir lista ordenada
+            Fin
+                </pre>
+            
+                
+                <h3>Referencias</h3>
+                <ul>
+                    <li>Concepto.de. (s.f.). *Algoritmo en informática*. Concepto.de. Recuperado el 28 de marzo de 2025, de <a href="https://concepto.de/algoritmo-en-informatica/">https://concepto.de/algoritmo-en-informatica/</a></li>
+                    <li>Ferrovial. (s.f.). *Algoritmos y Lógica*. Ferrovial. Recuperado el 28 de marzo de 2025, de <a href="https://www.ferrovial.com/es/stem/algoritmos/">https://www.ferrovial.com/es/stem/algoritmos/</a></li>
+                    <li>Perfil. (2023, 28 de marzo). *¿Qué es un algoritmo informático?* Perfil. Recuperado el 28 de marzo de 2025, de <a href="https://profile.es/blog/que-es-un-algoritmo-informatico/">https://profile.es/blog/que-es-un-algoritmo-informatico/</a></li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 OVI - Lógica Computacional</p>
+        </footer>
+        <a href="#" id="btnTop">&#8679;</a>
+    <script src="boton.js"></script>
+</body>
+</html>

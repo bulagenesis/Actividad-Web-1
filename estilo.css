@@ -171,213 +171,7 @@ h1 {
     background: #26a69a;
 }
 
-#proposiciones, #tablasverdad {
-    background: rgba(255, 255, 255, 0.95); 
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    width: 80%;
-    margin: 30px auto;
-    transition: transform 0.2s;
-}
 
-#proposiciones:hover, #tablasverdad:hover {
-    transform: scale(1.02); 
-}
-
-#proposiciones h2, #tablasverdad h2 {
-    color: #00796b;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    font-size: 28px;
-}
-
-#proposiciones h3, #tablasverdad h3 {
-    color: #004d40;
-    margin-top: 20px;
-    font-size: 22px;
-}
-
-#proposiciones ul, #tablasverdad ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
-
-#proposiciones ul li, #tablasverdad ul li {
-    margin-bottom: 10px;
-    line-height: 1.6;
-}
-
-#proposiciones blockquote, #tablasverdad blockquote {
-    font-style: italic;
-    background: #e0f2f1;
-    border-left: 5px solid #00796b;
-    padding: 10px 15px;
-    margin: 20px 0;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-#proposiciones a, #tablasverdad a {
-    color: #00796b;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#proposiciones a:hover, #tablasverdad a:hover {
-    text-decoration: underline;
-    color: #004d40;
-}
-
-#proposiciones img {
-    max-width: 100%; 
-    height: auto; 
-    display: block; 
-    margin: 20px 0; 
-    border-radius: 10px;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); 
-}
-
-#tablasverdad table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-#tablasverdad th, #tablasverdad td {
-    border: 1px solid #00796b;
-    padding: 10px;
-    text-align: center;
-}
-
-#tablasverdad th {
-    background: #00796b;
-    color: white;
-}
-
-#tablasverdad tr:nth-child(even) {
-    background: #e0f2f1;
-}
-
-#tablasverdad tr:nth-child(odd) {
-    background: #ffffff;
-}
-
-#logica_predicados {
-    background: rgba(255, 255, 255, 0.95); 
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    width: 80%;
-    margin: 30px auto;
-    transition: transform 0.2s;
-}
-
-#logica_predicados:hover {
-    transform: scale(1.02); 
-}
-
-#logica_predicados h2 {
-    color: #00796b;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    font-size: 28px;
-}
-
-#logica_predicados h3 {
-    color: #004d40;
-    margin-top: 20px;
-    font-size: 22px;
-}
-
-#logica_predicados ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
-
-#logica_predicados ul li {
-    margin-bottom: 10px;
-    line-height: 1.6;
-}
-
-#logica_predicados blockquote {
-    font-style: italic;
-    background: #e0f2f1;
-    border-left: 5px solid #00796b;
-    padding: 10px 15px;
-    margin: 20px 0;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-#logica_predicados a {
-    color: #00796b;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#logica_predicados a:hover {
-    text-decoration: underline;
-    color: #004d40;
-}
-
-#inferencias {
-    background: rgba(255, 255, 255, 0.95); 
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    width: 80%;
-    margin: 30px auto;
-    transition: transform 0.2s;
-}
-
-#inferencias:hover {
-    transform: scale(1.02); 
-}
-
-#inferencias h2 {
-    color: #00796b;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    font-size: 28px;
-}
-
-#inferencias h3 {
-    color: #004d40;
-    margin-top: 20px;
-    font-size: 22px;
-}
-
-#inferencias ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
-
-#inferencias ul li {
-    margin-bottom: 10px;
-    line-height: 1.6;
-}
-
-#inferencias blockquote {
-    font-style: italic;
-    background: #e0f2f1;
-    border-left: 5px solid #00796b;
-    padding: 10px 15px;
-    margin: 20px 0;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-#inferencias a {
-    color: #00796b;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#inferencias a:hover {
-    text-decoration: underline;
-    color: #004d40;
-}
 #videos, #podcasts {
     background: rgba(255, 255, 255, 0.95);
     padding: 30px;
@@ -459,24 +253,99 @@ iframe {
 #podcasts {
     margin-top: 80px; 
 }
-#proposiciones, 
-#tablasverdad, 
-#logica_predicados, 
-#inferencias {
-    margin-bottom: 100px; 
+#proposiciones h2 {
+    text-align: center;
 }
-
+blockquote {
+    font-style: italic;
+    color: #555;
+    padding: 10px;
+    border-left: 5px solid #1e3a5f;
+    background-color: #f4f4f9;
+}
 #tablasverdad {
-    margin-top: 100px; 
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
 }
 
-#logica_predicados {
-    margin-top: 100px;
+#tablasverdad h2 {
+    text-align: center;
+    
+    font-size: 24px;
 }
 
-#inferencias {
-    margin-top: 100px;
+#tablasverdad h3 {
+    
+    margin-top: 20px;
 }
+
+/* Estilos de las tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    background-color: #f4f4f9;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #1e3a5f;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #1e3a5f;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    background-color: #ffffff;
+}
+
+tr:nth-child(even) td {
+    background-color: #e3eaf4;
+}
+
+#logicapredicados h2 {
+    text-align: center;
+}
+#inferencias h2 {
+    text-align: center;
+}
+#algoritmos h2 {
+    text-align: center;
+}
+#proposiciones img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    
+
+}
+#logicapredicados img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    
+
+}
+#proposiciones img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+}
+#logicapredicados img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+
 
 
 
