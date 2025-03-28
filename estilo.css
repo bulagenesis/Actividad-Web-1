@@ -427,6 +427,62 @@ iframe {
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
+#btnTop {
+    position: fixed;
+    bottom: 100px; 
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    font-size: 24px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+#btnTop.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#btnTop:hover {
+    background-color: #0056b3;
+}
+#videos {
+    margin-bottom: 80px; 
+}
+
+#podcasts {
+    margin-top: 80px; 
+}
+#proposiciones, 
+#tablasverdad, 
+#logica_predicados, 
+#inferencias {
+    margin-bottom: 100px; 
+}
+
+#tablasverdad {
+    margin-top: 100px; 
+}
+
+#logica_predicados {
+    margin-top: 100px;
+}
+
+#inferencias {
+    margin-top: 100px;
+}
+
+
+
+
+
+
 
 
 
