@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recursos Multimedia</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
@@ -12,26 +12,54 @@
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="conceptos.html">Conceptos Claves</a></li>
-                <li><a href="actividades.html">Desafíos Interactivos</a></li>
-                <li><a href="nosotros.html">Sobre el Autor</a></li>
+                <li class="submenu">
+                    <a href="conceptos.html">Conceptos</a>
+                    <ul class="dropdown">
+                        <li><a href="conceptos.html#proposiciones">Proposiciones</a></li>
+                        <li><a href="conceptos.html#tablasverdad">Tablas de Verdad</a></li>
+                        <li><a href="conceptos.html#logica_predicados">Lógica de Predicados</a></li>
+                        <li><a href="conceptos.html#inferencias">Inferencias Lógicas</a></li>
+                        <li><a href="conceptos.html#algoritmos">Algoritmos y Lógica</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="multimedia.html">Multimedia</a>
+                    <ul class="dropdown">
+                        <li><a href="multimedia.html#videos">Videos</a></li>
+                        <li><a href="multimedia.html#podcasts">Podcasts</a></li>
+                    </ul>
+                </li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="nosotros.html">Autor</a></li>
             </ul>
+            
         </nav>
     </header>
-
-    <main class="scroll-container">
-        <h2>Videos y Podcasts</h2>
+<main>
+    <section id="videos">
+        <h2>VIDEOS</h2>
         <p>Aquí encontrarás contenido multimedia para reforzar el aprendizaje de la lógica computacional.</p>
 
-        <h3>Videos</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/video_id" frameborder="0" allowfullscreen></iframe>
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9-hLaXnF5WA?si=h-7ojp3qeinfirNi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-        <h3>Podcast</h3>
-        <audio controls>
-            <source src="podcast.mp3" type="audio/mpeg">
-            Tu navegador no soporta la reproducción de audio.
-        </audio>
-    </main>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/e52-3f0qL3c?si=NwKz1EnlpSjF0Sfn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OLVNWmnWc9I?si=EITRegwaFDXXxeEX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <section id="podcasts">
+            <h2>🎙️ PODCASTS</h2>
+            <p>Aquí encontrarás podcasts sobre programación, lógica computacional y desarrollo de software. 
+               Mejora tus habilidades y mantente actualizado con las últimas tendencias del mundo tech. 🚀</p>
+        
+            <iframe src="https://drive.google.com/file/d/1Xbt6xnpBGqhyaJwb-sr3UEt1qvTehLUk/preview" width="100%" height="100"></iframe>
+        
+            <br><br>
+        
+            <a href="https://drive.google.com/file/d/1Xbt6xnpBGqhyaJwb-sr3UEt1qvTehLUk/view?usp=sharing" target="_blank">
+                🔗 Escuchar en Google Drive
+            </a>
+        </section>
+</main>
 
     <footer>
         <p>&copy; 2024 OVI - Lógica Computacional</p>

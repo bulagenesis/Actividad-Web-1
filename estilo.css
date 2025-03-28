@@ -1,4 +1,4 @@
-/* Agregar fuente Poppins */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body {
@@ -110,7 +110,7 @@ footer {
 }
 
 h1, h2 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega un efecto de sombra para mayor contraste */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 h2 {
@@ -378,6 +378,62 @@ h1 {
     text-decoration: underline;
     color: #004d40;
 }
+#videos, #podcasts {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    margin: 30px auto;
+    transition: transform 0.2s;
+}
+
+#videos:hover, #podcasts:hover {
+    transform: scale(1.02);
+}
+
+#videos h2, #podcasts h2 {
+    color: #00796b;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+#videos p, #podcasts p {
+    color: #004d40;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#podcasts a {
+    display: block;
+    text-align: center;
+    color: #00796b;
+    font-weight: bold;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+#podcasts a:hover {
+    color: #004d40;
+    text-decoration: underline;
+}
+
+iframe {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
 
 
 
