@@ -1,12 +1,13 @@
+/* Agregar fuente Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background: linear-gradient(to right, #e0f7fa, #f1f8e9); 
     color: #333;
 }
-
 
 .banner {
     width: 100%;
@@ -24,7 +25,6 @@ header {
     background: linear-gradient(to right, #005f56, #003d33);
     position: relative;
 }
-
 
 nav ul {
     list-style: none;
@@ -54,7 +54,6 @@ nav ul li a:hover {
     background: #26a69a;
     transform: scale(1.1);
 }
-
 
 .objetivo {
     display: flex;
@@ -87,7 +86,6 @@ nav ul li a:hover {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-
 section {
     background: white;
     padding: 20px;
@@ -102,7 +100,6 @@ section:hover {
     transform: scale(1.02);
 }
 
-
 footer {
     text-align: center;
     padding: 15px;
@@ -111,7 +108,6 @@ footer {
     margin-top: 20px;
     font-weight: bold;
 }
-
 
 h1, h2 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega un efecto de sombra para mayor contraste */
@@ -125,14 +121,12 @@ h1 {
     color: #e2f5f3;
 }
 
-
 .titulo-principal {
     color: #ffeb3b; 
     font-size: 24px;
     font-weight: bold;
     margin-top: 5px;
 }
-
 
 .submenu {
     position: relative;
@@ -177,7 +171,6 @@ h1 {
     background: #26a69a;
 }
 
-
 #proposiciones, #tablasverdad {
     background: rgba(255, 255, 255, 0.95); 
     padding: 30px;
@@ -191,7 +184,6 @@ h1 {
 #proposiciones:hover, #tablasverdad:hover {
     transform: scale(1.02); 
 }
-
 
 #proposiciones h2, #tablasverdad h2 {
     color: #00796b;
@@ -207,7 +199,6 @@ h1 {
     font-size: 22px;
 }
 
-
 #proposiciones ul, #tablasverdad ul {
     list-style-type: square;
     padding-left: 20px;
@@ -218,7 +209,6 @@ h1 {
     line-height: 1.6;
 }
 
-
 #proposiciones blockquote, #tablasverdad blockquote {
     font-style: italic;
     background: #e0f2f1;
@@ -227,7 +217,6 @@ h1 {
     margin: 20px 0;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 
 #proposiciones a, #tablasverdad a {
     color: #00796b;
@@ -240,7 +229,6 @@ h1 {
     color: #004d40;
 }
 
-
 #proposiciones img {
     max-width: 100%; 
     height: auto; 
@@ -249,7 +237,6 @@ h1 {
     border-radius: 10px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); 
 }
-
 
 #tablasverdad table {
     width: 100%;
@@ -275,6 +262,7 @@ h1 {
 #tablasverdad tr:nth-child(odd) {
     background: #ffffff;
 }
+
 #logica_predicados {
     background: rgba(255, 255, 255, 0.95); 
     padding: 30px;
@@ -332,6 +320,7 @@ h1 {
     text-decoration: underline;
     color: #004d40;
 }
+
 #inferencias {
     background: rgba(255, 255, 255, 0.95); 
     padding: 30px;
@@ -389,6 +378,7 @@ h1 {
     text-decoration: underline;
     color: #004d40;
 }
+
 
 
 
