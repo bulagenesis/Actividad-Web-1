@@ -343,6 +343,141 @@ tr:nth-child(even) td {
     transform: scale(1.1); 
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
 }
+.actividad {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contenedor-drag {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.item {
+    background: #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: grab;
+}
+
+.categorias {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.categoria {
+    background: #f8f9fa;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    min-width: 100px;
+    text-align: center;
+}
+.actividad2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 20px 0;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.izquierda, .derecha {
+    width: 45%;
+}
+
+.linea-divisoria {
+    width: 2px;
+    height: 100%;
+    background: #d3d3d3;
+}
+
+.draggable, .drop-zone {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.draggable {
+    cursor: grab;
+    border: 2px solid #3498db;
+    color: #3498db;
+}
+
+.draggable:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(52, 152, 219, 0.2);
+}
+
+.drop-zone {
+    border: 2px dashed #bdc3c7;
+    color: #7f8c8d;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#actividad1 h2,
+#actividad2 h2,
+#actividad3 h2 {
+    text-align: center;
+}
+.scroll-container h2 {
+    text-align: center;
+}
+.scroll-container p {
+    text-align: center;
+}
+.scroll-container img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
 
 
 

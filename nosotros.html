@@ -4,28 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre el Autor</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
-        <h1>Sobre el Autor</h1>
+        <img src="imagen/logica.png" alt="Banner" class="banner">
+        
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="conceptos.html">Conceptos Claves</a></li>
-                <li><a href="multimedia.html">Recursos Multimedia</a></li>
-                <li><a href="actividades.html">Desafíos Interactivos</a></li>
+                <li class="submenu">
+                    <a href="conceptos.html">Conceptos</a>
+                    <ul class="dropdown">
+                        <li><a href="proposiciones.html">Proposiciones</a></li>
+                        <li><a href="tablasdeverdad.html">Tablas de Verdad</a></li>
+                        <li><a href="logicapredicados.html">Lógica de Predicados</a></li>
+                        <li><a href="inferencias.html">Inferencias Lógicas</a></li>
+                        <li><a href="algoritmos.html">Algoritmos y Lógica</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="multimedia.html">Multimedia</a>
+                    <ul class="dropdown">
+                        <li><a href="multimedia.html#videos">Videos</a></li>
+                        <li><a href="multimedia.html#podcasts">Podcasts</a></li>
+                    </ul>
+                </li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="nosotros.html">Autor</a></li>
             </ul>
+            
         </nav>
     </header>
 
     <main class="scroll-container">
         <h2>Autor del OVI</h2>
         <img src="tu-foto.jpg" alt="Foto del Autor" width="200">
-        <p><strong>Nombre:</strong> [Tu Nombre]</p>
-        <p><strong>Correo:</strong> [Tu Correo]</p>
-        <p>Soy estudiante de [tu universidad o institución] y apasionado/a por la lógica computacional. Este OVI fue diseñado para facilitar el aprendizaje interactivo en esta área.</p>
+        <p><strong>Nombre:</strong>Hernán Bula Quiñonez</p>
+        <p><strong>Correo:</strong> <a href="mailto:hbulaquinonez10@correo.unicordoba.edu.co">hbulaquinonez10@correo.unicordoba.edu.co</a></p>
+        <p><strong>Institución:</strong> Universidad de Córdoba</p>
+        <p><strong>Semestre:</strong> 6° semestre</p>
+        <p>Este OVI fue diseñado para facilitar el aprendizaje interactivo en esta área.</p>  
+           
     </main>
+    
 
     <footer>
         <p>&copy; 2024 OVI - Lógica Computacional</p>

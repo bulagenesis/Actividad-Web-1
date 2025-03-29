@@ -4,41 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafíos Interactivos</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
-        <h1>Desafíos Interactivos</h1>
+        <img src="imagen/logica.png" alt="Banner" class="banner">
+        
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="conceptos.html">Conceptos Claves</a></li>
-                <li><a href="multimedia.html">Recursos Multimedia</a></li>
-                <li><a href="nosotros.html">Sobre el Autor</a></li>
+                <li class="submenu">
+                    <a href="conceptos.html">Conceptos</a>
+                    <ul class="dropdown">
+                        <li><a href="proposiciones.html">Proposiciones</a></li>
+                        <li><a href="tablasdeverdad.html">Tablas de Verdad</a></li>
+                        <li><a href="logicapredicados.html">Lógica de Predicados</a></li>
+                        <li><a href="inferencias.html">Inferencias Lógicas</a></li>
+                        <li><a href="algoritmos.html">Algoritmos y Lógica</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="multimedia.html">Multimedia</a>
+                    <ul class="dropdown">
+                        <li><a href="multimedia.html#videos">Videos</a></li>
+                        <li><a href="multimedia.html#podcasts">Podcasts</a></li>
+                    </ul>
+                </li>
+                <ul>
+                    <li class="submenu">
+                        <a href="actividades.html">Actividades</a>
+                        <ul class="dropdown">
+                            <li><a href="actividades.html#actividad1">Actividad 1</a></li>
+                            <li><a href="actividades.html#actividad2">Actividad 2</a></li>
+                            <li><a href="actividades.html#actividad3">Actividad 3</a></li>
+                </ul>
+                
+                <li><a href="nosotros.html">Autor</a></li>
             </ul>
+            
+            
         </nav>
     </header>
 
-    <main class="scroll-container">
-        <h2>Actividades</h2>
-        <p>Pon a prueba tus conocimientos con estas actividades interactivas.</p>
+    <main>
+        <section id="actividad1">
+            <h2>Verdadero o Falso</h2>
+            <p>Responde si las siguientes afirmaciones son verdaderas o falsas.</p>
+            
+            <div class="pregunta">
+                <p>1. La lógica de predicados permite expresar relaciones entre individuos en un dominio.</p>
+                <button onclick="verificarVF(this, true)">Verdadero</button>
+                <button onclick="verificarVF(this, false)">Falso</button>
+            </div>
+            
+            <div class="pregunta">
+                <p>2. Un predicado es una función que siempre devuelve un valor numérico.</p>
+                <button onclick="verificarVF(this, false)">Verdadero</button>
+                <button onclick="verificarVF(this, true)">Falso</button>
+            </div>
+            
+            <div class="pregunta">
+                <p>3. El cuantificador universal (∀) se usa para indicar que una propiedad es válida para todos los elementos de un dominio.</p>
+                <button onclick="verificarVF(this, true)">Verdadero</button>
+                <button onclick="verificarVF(this, false)">Falso</button>
+            </div>
+            
+            <div class="pregunta">
+                <p>4. La expresión ∃x (Estudiante(x)) significa que todos los elementos del dominio son estudiantes.</p>
+                <button onclick="verificarVF(this, false)">Verdadero</button>
+                <button onclick="verificarVF(this, true)">Falso</button>
+            </div>
+        
+            <div class="pregunta">
+                <p>5. La lógica proposicional es más expresiva que la lógica de predicados.</p>
+                <button onclick="verificarVF(this, false)">Verdadero</button>
+                <button onclick="verificarVF(this, true)">Falso</button>
+            </div>
+        
+        </section>
+        
 
-        <h3>1. Verdadero o Falso</h3>
-        <p>Responde si las siguientes proposiciones son verdaderas o falsas.</p>
-        <ul>
-            <li>La negación de una proposición siempre es falsa. <strong>(Verdadero / Falso)</strong></li>
-            <li>El operador AND solo devuelve verdadero si ambas entradas son verdaderas. <strong>(Verdadero / Falso)</strong></li>
-        </ul>
+        <section id="actividad2">
+            <h2>Relaciona los conceptos</h2>
+            <p>Arrastra el concepto a la definición correcta.</p>
+            
+            <div class="actividad2-container">
+                <div class="columna izquierda">
+                    <div class="draggable" draggable="true" id="proposicion">Proposición</div>
+                    <div class="draggable" draggable="true" id="tautologia">Tautología</div>
+                    <div class="draggable" draggable="true" id="contradiccion">Contradicción</div>
+                </div>
+        
+                <div class="linea-divisoria"></div>
+        
+                <div class="columna derecha">
+                    <div class="drop-zone" data-correct="proposicion">Oración que puede ser verdadera o falsa.</div>
+                    <div class="drop-zone" data-correct="tautologia">Expresión que siempre es verdadera.</div>
+                    <div class="drop-zone" data-correct="contradiccion">Expresión que siempre es falsa.</div>
+                </div>
+            </div>
+        
+            <button onclick="verificarDragDrop()">Verificar</button>
+        </section>
+        
 
-        <h3>2. Completa el cuadro</h3>
-        <p>Llena la tabla de verdad para la expresión lógica <code>(A ∧ B) → C</code>.</p>
-
-        <h3>3. Relaciona los términos</h3>
-        <p>Une cada concepto con su definición correcta.</p>
+        
+        <section id="actividad3">
+            <h2>Completa la Tabla de Verdad</h2>
+            <table border="1">
+                <tr>
+                    <th>P</th><th>Q</th><th>P ∧ Q</th>
+                </tr>
+                <tr>
+                    <td>V</td><td>V</td>
+                    <td><input type="text" class="respuesta" data-respuesta="V"></td>
+                </tr>
+                <tr>
+                    <td>V</td><td>F</td>
+                    <td><input type="text" class="respuesta" data-respuesta="F"></td>
+                </tr>
+                <tr>
+                    <td>F</td><td>V</td>
+                    <td><input type="text" class="respuesta" data-respuesta="F"></td>
+                </tr>
+                <tr>
+                    <td>F</td><td>F</td>
+                    <td><input type="text" class="respuesta" data-respuesta="F"></td>
+                </tr>
+            </table>
+            <button onclick="verificarTablaVerdad()">Comprobar Respuestas</button>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2024 OVI - Lógica Computacional</p>
     </footer>
+   
+    <script src="actividades.js"></script>
+    <a href="#" id="btnTop">&#8679;</a>
+    <script src="boton.js"></script>
 </body>
 </html>
